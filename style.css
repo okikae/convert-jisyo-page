@@ -1,0 +1,81 @@
+@CHARSET "utf-8";
+
+body {
+    font-family: "Hiragino Maru Gothic ProN", sans-serif;
+    max-width: 960px;
+}
+
+hr {clear: both;}
+
+br.clear {clear: both;}
+
+p {margin: 0.5rem 0.0rem;}
+
+p.set-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.0rem 0.0rem;
+}
+
+div.henkan-set {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    margin: 20px 0px;
+}
+
+textarea {
+    font-family: "Hiragino Maru Gothic ProN", sans-serif;
+    font-size: 1.1rem;
+    border: 2px solid lightgray;
+    border-radius: 0.5rem 0.5rem;
+    width: 92%;
+    aspect-ratio: 2/1;
+    height: auto;
+}
+
+div.set {
+    float: left;
+    border: none;
+    margin: 0px 0px 6px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (min-width: 481px) {
+    textarea {aspect-ratio: 1/1;}
+
+    div.set {
+        float: left;
+        border: none;
+        padding: 0px 0px 6px 0px;
+        text-align: center;
+        width: 50%;
+    }
+}
+
+input {
+    font-family: "Hiragino Maru Gothic ProN", sans-serif;
+    font-size: 1.0rem;
+    border: 1px solid darkgray;
+    border-radius: 0.5rem 0.5rem;
+    padding: 0.0rem 0.5rem;
+    text-decoration: none;
+}
+
+input.bg_henkan {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: lightgreen;}
+
+button {
+    font-family: "Hiragino Maru Gothic ProN", sans-serif;
+    font-size: 1.0rem;
+    border: 1px solid darkgray;
+    border-radius: 0.5rem 0.5rem;
+    padding: 0.0rem 0.5rem;
+    text-decoration: none;
+}
+
+a {text-decoration: none;}
