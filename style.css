@@ -1,7 +1,6 @@
-@CHARSET "utf-8";
+@charset "utf-8";
 
 body {
-    font-family: "Hiragino Maru Gothic ProN", sans-serif;
     max-width: 960px;
 }
 
@@ -26,7 +25,6 @@ div.henkan-set {
 }
 
 textarea {
-    font-family: "Hiragino Maru Gothic ProN", sans-serif;
     font-size: 1.1rem;
     border: 2px solid lightgray;
     border-radius: 0.5rem 0.5rem;
@@ -56,7 +54,6 @@ div.set {
 }
 
 input {
-    font-family: "Hiragino Maru Gothic ProN", sans-serif;
     font-size: 1.0rem;
     border: 1px solid darkgray;
     border-radius: 0.5rem 0.5rem;
@@ -70,7 +67,6 @@ input.bg_henkan {
     background: lightgreen;}
 
 button {
-    font-family: "Hiragino Maru Gothic ProN", sans-serif;
     font-size: 1.0rem;
     border: 1px solid darkgray;
     border-radius: 0.5rem 0.5rem;

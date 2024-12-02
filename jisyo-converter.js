@@ -64,7 +64,7 @@ function readFileInLocal() {
                 var reader = new FileReader();
                 reader.readAsText(file, "UTF-8");
                 reader.onload = function(e) {
-                    document.mto.bef.value = reader.result;
+                    document.dictconv.bef.value = reader.result;
                 }},
             false);
 }
@@ -76,10 +76,10 @@ function convertToJson() {
     var iFileName = document.getElementById("ifile").files[0].name;
     var pref = iFileName.match(/(.*)-jisyo/)[1];
 
-    var str = document.mto.bef.value;
+    var str = document.dictconv.bef.value;
     var dict = dictCreator(str);
     var str = outputJsonDict(dict, "var " + pref + "Array");
-    document.mto.aft.value = str;
+    document.dictconv.aft.value = str;
 }
 
 // 変換した内容をファイルに保存する
@@ -88,7 +88,7 @@ function saveJsonDict() {
         .addEventListener(
             "click",
             function () {
-                var jsonDict = document.mto.aft.value;
+                var jsonDict = document.dictconv.aft.value;
                 var blob = new Blob([jsonDict], { type: "application/json" });
 
                 var dlAnchor = document.createElement("a");
